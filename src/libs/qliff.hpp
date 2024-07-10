@@ -42,10 +42,6 @@ public:
      *  @param numQubits quantidade de qubits totais no circuito
     */
     explicit CliffordSimulator(QBIT_TYPE numQubits);
-    /**
-     * 
-     */
-    explicit CliffordSimulator(CliffordSimulator& circuit);
     /** 
      *  @brief Aplica a porta Hadamard em um qubit específico
      *  @param qubit index do qubit aplicado
