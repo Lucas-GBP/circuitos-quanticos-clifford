@@ -10,7 +10,7 @@ int main() {
 
     cout << "Circuito concluído, carregando representações...";
 
-    //cout << circuit;
+    cout << circuit;
     //cout << circuit.strPaulli();
     cout << circuit.strKet();
     cout << endl << endl;    
