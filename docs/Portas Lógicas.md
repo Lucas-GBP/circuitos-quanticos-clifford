@@ -8,7 +8,7 @@ $$S = R_z(\pi/2) = \begin{bmatrix}
 	0 & i
 \end{bmatrix}$$
 $$CNOT = \begin{bmatrix}
-	0 & 0 & 0 & 0\\
+	1 & 0 & 0 & 0\\
 	0 & 1 & 0 & 0\\
 	0 & 0 & 0 & 1\\
 	0 & 0 & 1 & 0\\
