@@ -6,7 +6,7 @@
  - Lucas Gabriel Bitencourte Pedroso | 22100152
 
 ## Build
-Para ser possível compilar o simulador é necessário ter instalado o [Cmake](https://cmake.org/) além de um compilar de C++. Os scripts abaixo servem para compilar e executar o circuito a depender do seu sistema operacional.
+Para ser possível compilar o simulador é necessário ter instalado o [Cmake](https://cmake.org/) além de um compilador de C++. Os scripts abaixo servem para compilar e executar o circuito a depender do seu sistema operacional.
 
 ### Linux
 ```bash

@@ -168,7 +168,12 @@ std::string CliffordSimulator::strMesurement(MeasureReturns m){
 }
 std::string CliffordSimulator::strKet(){
     QBIT_TYPE gauss = gaussian();
-    QBIT_TYPE states_quant = 1 << gauss;
+    std::cout << gauss << std::endl;
+    if(gauss >= 64){
+        return "muitos estados para printar.";
+    }
+
+    uint64_t states_quant = 1 << gauss;
     std::string str = "\n";
     str += std::to_string(states_quant);
     str += " possiveis estados\n";
@@ -176,9 +181,9 @@ std::string CliffordSimulator::strKet(){
     seed(gauss);
     str += strBaseState();
 
-    for(QBIT_TYPE i = 0 ; i < states_quant-1; i++){
-        QBIT_TYPE i2 = i ^ (i+1);
-        for(QBIT_TYPE j = 0; j < gauss; j++){
+    for(uint64_t i = 0 ; i < states_quant-1; i++){
+        uint64_t i2 = i ^ (i+1);
+        for(uint64_t j = 0; j < gauss; j++){
             if(i2 & (1<<j)){
                 multRow(BUFFER_INDEX, n+j);
             }
