@@ -1,7 +1,7 @@
 #ifndef CIRCUITS_HPP
 #define CIRCUITS_HPP
 
-#include "qliff.hpp"
+#include "../libs/qliff.hpp"
 
 void test(CliffordSimulator&);
 void ghz(CliffordSimulator&);

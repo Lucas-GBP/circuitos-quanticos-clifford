@@ -5,4 +5,4 @@ project(CircuitosClifford)
 set(CMAKE_CXX_STANDARD 11)
 
 # Adiciona o executável
-add_executable(${PROJECT_NAME}.out src/main.cpp src/libs/qliff.cpp src/libs/circuits.cpp)
+add_executable(${PROJECT_NAME}.out src/main.cpp src/libs/qliff.cpp src/utils/circuits.cpp src/utils/bitwise.cpp)

@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "libs/qliff.hpp"
-#include "libs/circuits.hpp"
+#include "utils/circuits.hpp"
+#include "utils/bitwise.h"
 
 #endif
